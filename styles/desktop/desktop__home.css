@@ -8,7 +8,9 @@
     height: 100vh;
     color: white;
     overflow: hidden;
+    width: fit-content;
   }
+
   .prem__nav {
     padding-block: 2rem;
     padding-inline: clamp(3rem, 13vw, 10rem);

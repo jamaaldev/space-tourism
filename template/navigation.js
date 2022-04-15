@@ -1,7 +1,7 @@
 // header navigation
 
 document.getElementById("nav").insertAdjacentHTML(
-  "beforebegin",
+  "afterend",
   `
 
       <img src="./assets/shared/logo.svg" alt="logo brand" class="logo" />
