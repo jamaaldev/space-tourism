@@ -1,0 +1,104 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(../../assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    width: fit-content;
+  }
+  .prem__nav {
+    position: fixed;
+    inset: 0 0 0 30%;
+  }
+  [data-visible="false"] {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  [data-visible="true"] {
+    transition: 200ms ease-out;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .prem__ul {
+    padding: min(30vh, 10rem) 2em;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .mobile__nav__toggle {
+    display: block;
+    position: absolute;
+    /* border: none; */
+    top: 2rem;
+    background-image: url(../../assets/shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    right: 2rem;
+    z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+  }
+  .mobile__nav__toggle[aria-expanded="true"] {
+    background-image: url(../../assets/shared/icon-close.svg);
+  }
+
+  /* home mobile section */
+  .space {
+    display: block;
+    text-align: center;
+
+    margin-block: min(10vh, 5em);
+  }
+  /* .col1 {
+    max-width: 340px;
+    width: max-content;
+    max-height: 310px;
+  } */
+  .col1 p:first-of-type {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: var(--text-barlow);
+    letter-spacing: 4px;
+  }
+  /* .col1 header {
+    display: block;
+    text-align: center;
+    margin-block: 3em;
+  } */
+  .col1 h1 {
+    color: var(--white-text);
+    font-size: 6.375em;
+    text-transform: uppercase;
+    margin-block: min(2rem, 5vw);
+  }
+  .col1 p {
+    line-height: 1.6;
+    color: #d0d6f9;
+    font-size: 1rem;
+    font-family: var(--text-barlow);
+    letter-spacing: 1px;
+    margin: auto 20px;
+  }
+  .col2 {
+    margin-block: clamp(5rem, 12vh, 2rem);
+  }
+  .col2 p {
+    font-size: 2em;
+    background: aliceblue;
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}

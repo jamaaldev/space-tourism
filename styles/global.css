@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Manrope:wght@600;800&family=Overpass:wght@400;700&display=swap");
+:root {
+  --white-text: hsla(360, 100%, 100%, 1);
+  --text-p: #d0d6f9;
+  --text-barlow: "Barlow Condensed", sans-serif;
+  --text-bellefair: "Bellefair", serif;
+  --text-manrope: "Manrope", sans-serif;
+  --txt-overpass: "Overpass", sans-serif;
+}
+.logo {
+  margin-inline-start: 1rem;
+}
+.sr__only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.mobile__nav__toggle {
+  display: none;
+}
+.prem__header {
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--text-barlow);
+  font-size: 1em;
+  margin: 1rem 0;
+}
+/* .prem__header .logo {
+  margin: 2rem;
+} */
+
+.prem__nav a {
+  color: var(--white-text);
+  font-weight: 400;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  margin-inline-end: 2rem;
+}
+.prem__nav a > [aria-hidden="true"] {
+  font-weight: 700;
+  margin-inline-end: 0.75em;
+}
+.prem__nav {
+  color: var(--white-text);
+  background-color: hsl(0 0% 0% / 0.75);
+}
+
+/* desktop */
+
+@supports (backdrop-filter: blur(1em)) {
+  .prem__nav {
+    background-color: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1em);
+  }
+}
+.flex {
+  display: flex;
+  gap: 0.5rem;
+}

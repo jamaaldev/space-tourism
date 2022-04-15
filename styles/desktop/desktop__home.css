@@ -1,0 +1,87 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 901px) {
+  body {
+    background-image: url(../../assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+  }
+  .prem__nav {
+    padding-block: 2rem;
+    padding-inline: clamp(3rem, 13vw, 10rem);
+  }
+
+  .prem__header .line {
+    position: relative;
+    left: 5px;
+    width: 100%;
+    z-index: 5;
+  }
+  .prem__header .line::before {
+    position: relative;
+    display: block;
+    content: "";
+    background-color: hsl(0 0% 100% / 0.3);
+    width: 100%;
+    padding: 1px 20px;
+  }
+
+  .space {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block: clamp(5rem, 10vw, 10rem);
+  }
+  .col1 {
+    width: 450px;
+    height: 382px;
+  }
+  .col1 p:first-of-type {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-family: var(--text-barlow);
+    letter-spacing: 4px;
+  }
+  .col1 h1 {
+    font-size: 9.375em;
+    text-transform: uppercase;
+    margin-block: min(2rem, 5vw);
+  }
+  .col1 p {
+    line-height: 1.6;
+    color: #d0d6f9;
+    font-size: 18px;
+    font-family: var(--text-barlow);
+    letter-spacing: 1px;
+  }
+  .col2 p {
+    font-size: 2em;
+    background: aliceblue;
+    color: black;
+    text-align: center;
+    width: 8.875em;
+    height: 8.875em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* to make long line in the navigation aria this is another way*/
+
+/* .prem__header::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin-right: -2.5rem;
+  background: red;
+  order: 1;
+}
+.prem__nav {
+  order: 2;
+} */
