@@ -4,9 +4,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     color: white;
     overflow: hidden;
+    min-height: 110vh;
+    min-height: -webkit-fill-available;
+  }
+  html {
+    height: -webkit-fill-available;
   }
   .destination {
     flex-direction: column;
