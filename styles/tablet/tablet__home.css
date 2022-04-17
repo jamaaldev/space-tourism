@@ -8,6 +8,10 @@
     height: 100vh;
     overflow: hidden;
   }
+  .flex {
+    display: flex;
+    gap: 0.5rem;
+  }
 
   .prem__nav {
     position: fixed;

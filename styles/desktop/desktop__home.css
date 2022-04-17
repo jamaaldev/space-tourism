@@ -9,6 +9,10 @@
     color: white;
     overflow: hidden;
   }
+  .flex {
+    display: flex;
+    gap: 0.5rem;
+  }
 
   .prem__nav {
     padding-block: 2rem;
@@ -68,6 +72,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  /* desktop */
+
+  .prem__header .line {
+    position: relative;
+    left: 5px;
+    width: 100%;
+    z-index: 5;
+  }
+  .prem__header .line::before {
+    position: relative;
+    display: block;
+    content: "";
+    background-color: hsl(0 0% 100% / 0.3);
+    width: 100%;
+    padding: 0.1px 20px;
   }
 }
 

@@ -56,23 +56,6 @@
   padding-inline: clamp(3rem, 13vw, 10rem);
 }
 
-/* desktop */
-
-.prem__header .line {
-  position: relative;
-  left: 5px;
-  width: 100%;
-  z-index: 5;
-}
-.prem__header .line::before {
-  position: relative;
-  display: block;
-  content: "";
-  background-color: hsl(0 0% 100% / 0.3);
-  width: 100%;
-  padding: 0.1px 20px;
-}
-
 @supports (backdrop-filter: blur(1em)) {
   .prem__nav {
     background-color: hsl(0 0% 100% / 0.1);

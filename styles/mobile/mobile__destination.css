@@ -1,16 +1,16 @@
 @media only screen and (max-width: 600px) {
   body {
+    border: solid red;
     background-image: url(../../assets/destination/background-destination-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-    overflow: hidden;
     min-height: 110vh;
-    min-height: -webkit-fill-available;
   }
-  html {
-    height: -webkit-fill-available;
+  .flex {
+    display: flex;
+    gap: 2.5rem;
   }
   .destination {
     flex-direction: column;
@@ -65,12 +65,12 @@
     content: "";
     background-color: hsl(0 0% 100% / 0.3);
     width: 100%;
-    padding: 0.5px 20px;
+    padding: 0.5px 0px;
     margin: 30px 0;
   }
   .coldes1,
   .coldes2 {
-    max-width: 630px;
+    max-width: 600px;
     text-align: center;
   }
   .coldes1 .planet {
@@ -86,6 +86,7 @@
     justify-content: space-between;
     font-family: var(--text-barlow-Con);
     text-transform: uppercase;
+    flex-flow: column;
   }
   .avg,
   .travel {

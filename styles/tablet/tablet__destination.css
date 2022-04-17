@@ -6,7 +6,10 @@
     background-size: cover;
     background-position: center;
     color: white;
-    overflow: hidden;
+  }
+  .flex {
+    display: flex;
+    gap: 0.5rem;
   }
   .destination {
     flex-direction: column;
