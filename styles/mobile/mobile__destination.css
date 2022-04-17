@@ -1,6 +1,5 @@
 @media only screen and (max-width: 600px) {
   body {
-    border: solid red;
     background-image: url(../../assets/destination/background-destination-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;

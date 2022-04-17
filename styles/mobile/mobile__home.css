@@ -4,11 +4,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 110vh;
   }
   .flex {
     display: flex;
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
 
   .prem__nav {
