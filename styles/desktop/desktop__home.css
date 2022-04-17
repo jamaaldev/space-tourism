@@ -15,7 +15,7 @@
     padding-inline: clamp(3rem, 13vw, 10rem);
   }
 
-  .prem__header .line {
+  /* .prem__header .line {
     position: relative;
     left: 5px;
     width: 100%;
@@ -27,10 +27,10 @@
     content: "";
     background-color: hsl(0 0% 100% / 0.3);
     width: 100%;
-    padding: 1px 20px;
-  }
+    padding: 0.5px 20px;
+  } */
 
-  .space {
+  .home {
     display: flex;
     justify-content: space-evenly;
     margin-block: clamp(5rem, 10vw, 10rem);

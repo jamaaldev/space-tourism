@@ -1,0 +1,107 @@
+@media only screen and (min-width: 901px) {
+  body {
+    background-image: url(../../assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+  }
+  .destination {
+    justify-content: space-evenly;
+  }
+  .pick {
+    font-size: 1.75em;
+    font-family: var(--text-barlow-Con);
+    font-weight: 400;
+    margin-block: 4rem;
+    margin-inline-start: 10rem;
+    gap: 1.5rem;
+  }
+  .pick p {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  .dis {
+    opacity: 0.25;
+    font-weight: 700;
+  }
+  .planet__name {
+    font-size: 6.25em;
+    font-family: var(--text-bellefair);
+    text-transform: uppercase;
+    margin: 30px 0;
+  }
+  .planet__ul {
+    gap: 2rem;
+  }
+  .planet__ul a {
+    text-decoration: none;
+    color: var(--text-p);
+    font-family: var(--text-barlow-Con);
+    text-transform: uppercase;
+  }
+  .planet__ul a:hover {
+    border-block-end: solid grey 1px;
+    padding-block-end: 5px;
+  }
+  .dline {
+    position: relative;
+    z-index: 5;
+  }
+  .dline::before {
+    position: relative;
+    display: block;
+    content: "";
+    background-color: hsl(0 0% 100% / 0.3);
+    width: 100%;
+    padding: 0.5px 20px;
+    margin: 30px 0;
+  }
+  .coldes1,
+  .coldes2 {
+    max-width: 445px;
+  }
+  .coldes1 .planet {
+    width: 100%;
+  }
+  .coldes2 > p {
+    line-height: 1.7;
+    font-size: 1.125em;
+    font-family: var(--text-barlow);
+    color: var(--text-p);
+  }
+  .distance__time {
+    justify-content: space-between;
+    font-family: var(--text-barlow-Con);
+    text-transform: uppercase;
+  }
+  .avg,
+  .travel {
+    font-family: var(--text-barlow-Con);
+    font-size: 0.875em;
+    margin-block-end: 1rem;
+  }
+  .distance,
+  .days {
+    font-family: var(--text-bellefair);
+    font-size: 1.75em;
+  }
+}
+
+/* to make long line in the navigation aria this is another way*/
+
+/* .prem__header::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin-right: -2.5rem;
+  background: red;
+  order: 1;
+}
+.prem__nav {
+  order: 2;
+} */
