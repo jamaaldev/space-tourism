@@ -1,18 +1,22 @@
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 901px) {
   body {
-    background-image: url(../../assets/destination/background-destination-tablet.jpg);
+    background-image: url(../../assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
     color: white;
+    overflow: hidden;
   }
   .flex {
     display: flex;
     gap: 0.5rem;
   }
-  .destination {
-    flex-direction: column;
+
+  .crew {
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    margin-top: -100px;
     align-items: center;
   }
   .pick {
@@ -20,7 +24,7 @@
     font-family: var(--text-barlow-Con);
     font-weight: 400;
     margin-block: 4rem;
-    margin-inline-start: 3rem;
+    margin-inline-start: 10rem;
     gap: 1.5rem;
   }
   .pick p {
@@ -31,18 +35,20 @@
     opacity: 0.25;
     font-weight: 700;
   }
-  .planet__name {
-    font-size: 6.25em;
+  .crew__title {
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-family: var(--text-bellefair);
+    font-size: 2em;
+  }
+  .crew__name {
+    font-size: 3.5em;
     font-family: var(--text-bellefair);
     text-transform: uppercase;
     margin: 30px 0;
   }
-  .planet__header {
-    display: flex;
-    justify-content: center;
-  }
   .planet__ul {
-    gap: 3rem;
+    gap: 2rem;
   }
   .planet__ul a {
     text-decoration: none;
@@ -66,20 +72,21 @@
     padding: 0.5px 20px;
     margin: 30px 0;
   }
-  .coldes1,
+  .coldes1 {
+    max-width: 444px;
+  }
   .coldes2 {
-    max-width: 630px;
-    text-align: center;
+    max-width: 500px;
   }
-  .coldes1 .planet {
-    width: 70%;
-    margin-block-end: 2rem;
+  .coldes1 .crew__person {
+    width: 100%;
   }
-  .coldes2 > p {
+  .coldes2 .crew__p {
     line-height: 1.7;
     font-size: 1.125em;
     font-family: var(--text-barlow);
     color: var(--text-p);
+    max-width: 430px;
   }
   .distance__time {
     justify-content: space-between;
@@ -98,43 +105,36 @@
     font-size: 1.75em;
   }
 
-  .mobile__nav__toggle {
-    display: block;
-    position: absolute;
-    /* border: none; */
-    top: 2rem;
-    background-image: url(../../assets/shared/icon-hamburger.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
-    border: none;
-    right: 2rem;
-    z-index: 9999;
-    width: 2rem;
-    aspect-ratio: 1;
-  }
-  .mobile__nav__toggle[aria-expanded="true"] {
-    background-image: url(../../assets/shared/icon-close.svg);
-  }
-  .prem__nav {
-    position: fixed;
-    inset: 0 0 0 30%;
-  }
-  [data-visible="false"] {
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-  }
-  [data-visible="true"] {
-    transition: 200ms ease-out;
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0%);
-  }
+  /* desktop */
 
-  .prem__ul {
-    padding: min(30vh, 10rem) 2em;
-    flex-direction: column;
-    gap: 2rem;
+  .prem__header .line {
+    position: relative;
+    left: 5px;
+    width: 100%;
+    z-index: 5;
+  }
+  .prem__header .line::before {
+    position: relative;
+    display: block;
+    content: "";
+    background-color: hsl(0 0% 100% / 0.3);
+    width: 100%;
+    padding: 0.1px 20px;
   }
 }
+
+/* to make long line in the navigation aria this is another way*/
+
+/* .prem__header::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin-right: -2.5rem;
+  background: red;
+  order: 1;
+}
+.prem__nav {
+  order: 2;
+} */
