@@ -7,16 +7,16 @@ document.getElementById("planetnav").insertAdjacentHTML(
       <nav  class="planet__nav">
         <ul class="planet__ul flex" id="planet__ul">
           <li>
-            <a href="./index.html">Moon</a>
+            <a href="./destination-moon.html">Moon</a>
           </li>
           <li>
-            <a href="./destination-moon.html">Mars</a>
+            <a href="./destination-mars.html">Mars</a>
           </li>
           <li>
-            <a href="">Europa</a>
+            <a href="./destination-europa.html">Europa</a>
           </li>
           <li>
-            <a href="">Titan</a>
+            <a href="./destination-titan.html">Titan</a>
           </li>
         </ul>
       </nav>
