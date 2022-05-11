@@ -1,4 +1,4 @@
-// header navigation
+// content navigation
 
 document.getElementById("planetnav").insertAdjacentHTML(
   "afterend",

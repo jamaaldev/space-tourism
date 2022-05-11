@@ -1,0 +1,22 @@
+.planet__ul {
+  list-style: inside;
+}
+.planet__ul li {
+  display: block;
+}
+.planet__ul li a {
+  font-size: 60px;
+  pointer-events: fill;
+  display: list-item;
+  cursor: pointer;
+  text-decoration: none;
+  width: 0;
+  color: rgba(220, 220, 220, 0.386);
+  width: 20px;
+}
+
+.planet__ul a:hover {
+  border-block-end: none;
+  padding-block-end: 0px;
+  color: white;
+}

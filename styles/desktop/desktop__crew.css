@@ -16,8 +16,8 @@
   .crew {
     justify-content: space-evenly;
     flex-direction: row-reverse;
-    margin-top: -100px;
-    align-items: center;
+    /* margin-top: -100px; */
+    /* align-items: center; */
   }
   .pick {
     font-size: 1.75em;
@@ -42,7 +42,7 @@
     font-size: 2em;
   }
   .crew__name {
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-family: var(--text-bellefair);
     text-transform: uppercase;
     margin: 30px 0;
@@ -79,7 +79,7 @@
     max-width: 500px;
   }
   .coldes1 .crew__person {
-    width: 100%;
+    /* width: 100%; */
   }
   .coldes2 .crew__p {
     line-height: 1.7;
