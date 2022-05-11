@@ -4,7 +4,7 @@ document.getElementById("dotnav").insertAdjacentHTML(
   "afterend",
   `
 
-      <nav  class="planet__nav">
+      <nav  class="planet__nav dot">
         <ul class="planet__ul flex" id="planet__ul">
           <li >
             <a href="./crew-commander.html"><span></span></a>

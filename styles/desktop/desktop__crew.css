@@ -73,21 +73,23 @@
     margin: 30px 0;
   }
   .coldes1 {
-    max-width: 444px;
+    max-width: 470px;
   }
   .coldes2 {
-    max-width: 500px;
+    max-width: 430px;
     margin-top: 150px;
   }
   .coldes1 .crew__person {
-    /* width: 100%; */
+    /* width: 100vw; */
+    height: 100vh;
   }
   .coldes2 .crew__p {
     line-height: 1.7;
     font-size: 1.125em;
     font-family: var(--text-barlow);
     color: var(--text-p);
-    max-width: 430px;
+    max-height: 170px;
+    max-width: 480px;
   }
   .distance__time {
     justify-content: space-between;
