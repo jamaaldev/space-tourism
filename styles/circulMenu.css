@@ -1,0 +1,39 @@
+.planet__ul {
+  list-style: inside;
+}
+.planet__ul li {
+  display: block;
+}
+.planet__ul li a {
+  text-decoration: none;
+}
+
+.planet__ul a:hover {
+  border-block-end: none;
+  padding-block-end: 0px;
+  color: white;
+}
+
+.coldes2 {
+  display: flex;
+  gap: 2rem;
+}
+/* .dot {
+  margin-top: 50px;
+} */
+
+.circul ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.circul ul {
+  gap: 1rem;
+}
+.circul button {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+}
