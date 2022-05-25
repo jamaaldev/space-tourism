@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/mobile/mobile__destination.css" />
-    <link rel="stylesheet" href="./styles/tablet/tablet__destination.css" />
+    <link rel="stylesheet" href="./styles/tablet/tablet__tech.css" />
     <link rel="stylesheet" href="./styles/desktop/desktop__tech.css" />
 
     <link rel="stylesheet" href="./styles/circulMenu.css" />
@@ -34,7 +34,12 @@
         </div>
       </div>
       <div class="coldes1">
-        <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="Mars" class="planet" />
+        <picture>
+          <source srcset="./assets/technology/image-space-capsule-portrait.jpg" media="(min-width: 901px)" />
+          <source srcset="./assets/technology/image-space-capsule-landscape.jpg" media="(max-width: 900px)" />
+          <img srcset="medium.jpg" alt="…" style="width: 100%" />
+        </picture>
+        <!-- <img src="./assets/technology/image-space-capsule-landscape.jpg" alt="Mars" class="planet" /> -->
       </div>
     </section>
 

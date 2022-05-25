@@ -1,30 +1,26 @@
-@media only screen and (min-width: 901px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 900px) {
   body {
-    background-image: url(../../assets/crew/background-crew-desktop.jpg);
+    background-image: url(../../assets/technology/background-technology-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     color: white;
-    overflow: hidden;
   }
   .flex {
     display: flex;
     gap: 0.5rem;
   }
-
-  .crew {
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-    margin-top: -100px;
-    /* align-items: center; */
+  .destination {
+    flex-direction: column;
+    align-items: center;
   }
   .pick {
     font-size: 1.75em;
     font-family: var(--text-barlow-Con);
     font-weight: 400;
     margin-block: 4rem;
-    margin-inline-start: 10rem;
+    margin-inline-start: 3rem;
     gap: 1.5rem;
   }
   .pick p {
@@ -35,20 +31,18 @@
     opacity: 0.25;
     font-weight: 700;
   }
-  .crew__title {
-    opacity: 0.5;
-    text-transform: uppercase;
-    font-family: var(--text-bellefair);
-    font-size: 2em;
-  }
-  .crew__name {
-    font-size: 2.5em;
+  .planet__name {
+    font-size: 6.25em;
     font-family: var(--text-bellefair);
     text-transform: uppercase;
     margin: 30px 0;
   }
+  .planet__header {
+    display: flex;
+    justify-content: center;
+  }
   .planet__ul {
-    gap: 2rem;
+    gap: 3rem;
   }
   .planet__ul a {
     text-decoration: none;
@@ -72,24 +66,20 @@
     padding: 0.5px 20px;
     margin: 30px 0;
   }
-  .coldes1 {
-    max-width: 470px;
-  }
+  .coldes1,
   .coldes2 {
-    max-width: 430px;
-    margin-top: 150px;
+    max-width: fit-content;
+    text-align: center;
   }
-  .coldes1 .crew__person {
-    /* width: 100vw; */
-    height: 90vh;
+  .coldes1 .planet {
+    width: 70%;
+    margin-block-end: 2rem;
   }
-  .coldes2 .crew__p {
+  .coldes2 > p {
     line-height: 1.7;
     font-size: 1.125em;
     font-family: var(--text-barlow);
     color: var(--text-p);
-    max-height: 170px;
-    max-width: 480px;
   }
   .distance__time {
     justify-content: space-between;
@@ -108,36 +98,43 @@
     font-size: 1.75em;
   }
 
-  /* desktop */
-
-  .prem__header .line {
-    position: relative;
-    left: 5px;
-    width: 100%;
-    z-index: 5;
-  }
-  .prem__header .line::before {
-    position: relative;
+  .mobile__nav__toggle {
     display: block;
-    content: "";
-    background-color: hsl(0 0% 100% / 0.3);
-    width: 100%;
-    padding: 0.1px 20px;
+    position: absolute;
+    /* border: none; */
+    top: 2rem;
+    background-image: url(../../assets/shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    right: 2rem;
+    z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+  }
+  .mobile__nav__toggle[aria-expanded="true"] {
+    background-image: url(../../assets/shared/icon-close.svg);
+  }
+  .prem__nav {
+    position: fixed;
+    inset: 0 0 0 30%;
+  }
+  [data-visible="false"] {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  [data-visible="true"] {
+    transition: 200ms ease-out;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .prem__ul {
+    padding: min(30vh, 10rem) 2em;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
-
-/* to make long line in the navigation aria this is another way*/
-
-/* .prem__header::after {
-  content: "";
-  display: block;
-  position: relative;
-  height: 1px;
-  width: 100%;
-  margin-right: -2.5rem;
-  background: red;
-  order: 1;
-}
-.prem__nav {
-  order: 2;
-} */
